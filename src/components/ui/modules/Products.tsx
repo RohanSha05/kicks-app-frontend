@@ -9,7 +9,7 @@ const Products = () => {
     return (
 			<div className="my-12">
 				<div className="relative flex justify-between">
-					<h1 className="uppercase products-title">don't miss out new drops</h1>
+					<h1 className="uppercase products-title">dont miss out new drops</h1>
 					<div className="absolute bottom-0 right-0">
 						<button className="uppercase btn btn-active hero-shop-button">
 							shop new drops

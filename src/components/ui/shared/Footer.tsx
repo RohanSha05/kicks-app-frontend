@@ -4,7 +4,7 @@ const Footer = () => {
     return (
 			<div className="flex justify-center my-10">
 				<div className="w-[1320px]">
-					<footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10 rounded-4xl">
+					<footer className="footer sm:footer-horizontal bg-blue-600 text-base-content p-10 rounded-4xl">
 						<nav>
 							<h6 className="footer-title">Services</h6>
 							<a className="link link-hover">Branding</a>
@@ -26,7 +26,7 @@ const Footer = () => {
 							<a className="link link-hover">Cookie policy</a>
 						</nav>
 					</footer>
-					<footer className="footer bg-blue-500 text-base-content border-base-300 border-t px-10 py-4 rounded-4xl -mt-8 relative z-10">
+					<footer className="footer bg-black text-base-content border-base-300 border-t px-10 py-4 rounded-4xl -mt-8 relative z-10">
 						<aside className="grid-flow-col items-center">
 							<svg
 								width="24"
