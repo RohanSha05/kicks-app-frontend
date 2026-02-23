@@ -6,7 +6,7 @@ Kicks App Frontend is a Next.js storefront UI for browsing sneakers, viewing pro
 
 ## Live URL
 
-Coming soon.
+(https://kicks-app-frontend-j124.vercel.app/)
 
 ## Tech Stack
 
@@ -15,6 +15,7 @@ Coming soon.
 - TypeScript
 - Tailwind CSS
 - Axios
+- Daisy UI
 
 ## Setup
 
@@ -34,6 +35,7 @@ npm run dev
 
 ```
 http://localhost:3000
+Live site : https://kicks-app-frontend-j124.vercel.app/
 ```
 
 ## Notes
