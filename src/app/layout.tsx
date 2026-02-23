@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/ui/shared/Header";
 import Footer from "@/components/ui/shared/Footer";
 import { ProductsProvider } from "@/context/ProductsProvider";
+import CategoriesProvider from "@/context/CategoriesProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -43,9 +44,11 @@ export default function RootLayout({
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 			>
 				<ProductsProvider>
-					<Header />
-					<main className="min-h-screen">{children}</main>
-					<Footer />
+					<CategoriesProvider>
+						<Header />
+						<main className="min-h-screen">{children}</main>
+						<Footer />
+					</CategoriesProvider>
 				</ProductsProvider>
 			</body>
 		</html>

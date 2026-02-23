@@ -1,6 +1,7 @@
 import Categories from "@/components/ui/modules/Categories";
 import Hero from "@/components/ui/modules/Hero";
 import Products from "@/components/ui/modules/Products";
+import Reviews from "@/components/ui/modules/Reviews";
 
 const HomePage = () => {
 	return (
@@ -9,6 +10,7 @@ const HomePage = () => {
 				<Hero />
 				<Products />
 				<Categories />
+				<Reviews />
 			</div>
 		</div>
 	);
