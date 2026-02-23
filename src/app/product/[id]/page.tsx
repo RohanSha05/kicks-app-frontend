@@ -27,7 +27,7 @@ type Product = {
 };
 
 export default function ProductDetailsPage() {
-	const params = useParams();
+	const params = useParams<{ id: string }>();
 	const [product, setProduct] = useState<Product | null>(null);
 	const [loading, setLoading] = useState(true);
 	const [error, setError] = useState<string | null>(null);
@@ -41,7 +41,9 @@ export default function ProductDetailsPage() {
 		async function fetchProduct() {
 			try {
 				const response = await axios.get<Product>(
-					`https://api.escuelajs.co/api/v1/products/${params.id}`,
+					`https://api.escuelajs.co/api/v1/products/${encodeURIComponent(
+						params.id,
+					)}`,
 				);
 				setProduct(response.data);
 				setError(null);
